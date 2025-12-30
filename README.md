@@ -37,6 +37,12 @@ The focus of the project is clarity, usability, and correct architectural decisi
 ### Frontend
 PayPal Client ID stored in a .env file using Vite environment variables
 
+## Local Setup Instructions
+Prerequisites
+- Node.js v18+
+- npm v9+
+- MongoDB Atlas account
+
 ### Backend
 MongoDB connection string
 JWT secret
@@ -50,7 +56,11 @@ Frontend
 cd eventbook
 npm install
 npm run dev
+
 ```
+Frontend runs at:
+http://localhost:5173
+
 
 Backend
 ```bash
@@ -59,6 +69,9 @@ cd backend
 npm install
 node server.js
 ```
+Backend runs at:
+http://localhost:5000
+
 ## Future Enhancements
 - Improvements
 - Backend payment verification
