@@ -57,7 +57,7 @@ Backend
 cd eventbook
 cd backend
 npm install
-node index.js
+node server.js
 ```
 ## Future Enhancements
 Improvements
