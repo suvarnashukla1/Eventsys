@@ -31,11 +31,8 @@ export default function Show() {
         padding: "40px"
       }}
     >
-      <style>{`
-        body {
-          margin: 0;
-        }
-      `}</style>
+    
+    
 
       {event && (
         <div

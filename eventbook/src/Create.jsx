@@ -19,11 +19,9 @@ const Create = () => {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         },
         body: JSON.stringify({
-          eventName,
-          location,
+          eventName, location,
           place,
-          seats,
-          amount,
+          seats,amount,
           restriction,
           date,
           time
@@ -58,7 +56,6 @@ const Create = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: "Segoe UI, sans-serif"
       }}
     >
       <div

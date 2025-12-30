@@ -33,8 +33,7 @@ export default function Browse() {
           "url('https://magazine.luxus-plus.com/wp-content/uploads/2023/07/TAIT-x-The-Weeknd-2022-0026-scaled-1.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        padding: "40px",
-        fontFamily: "Segoe UI, sans-serif"
+        padding: "40px"
       }}
     >
       <style>{`
@@ -50,7 +49,6 @@ export default function Browse() {
         }
       `}</style>
 
-      {/* Heading */}
       <h1
         style={{
           textAlign: "center",
@@ -62,7 +60,6 @@ export default function Browse() {
         All Events
       </h1>
 
-      {/* Filter BELOW heading, LEFT aligned */}
       <div style={{ marginBottom: "30px" }}>
         <select
           value={month}
@@ -91,8 +88,6 @@ export default function Browse() {
           <option value="11">December</option>
         </select>
       </div>
-
-      {/* Events */}
       {filteredEvents.length === 0 ? (
         <p style={{ color: "white", textAlign: "center" }}>
           No events found

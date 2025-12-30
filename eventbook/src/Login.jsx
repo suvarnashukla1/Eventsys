@@ -45,8 +45,7 @@ export default function Login() {
         left: 0,
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "Segoe UI, sans-serif"
+        justifyContent: "center"
       }}
     >
       <div
@@ -83,7 +82,7 @@ export default function Login() {
             padding: "12px",
             marginBottom: "14px",
             borderRadius: "5px",
-            border: "1px solid #ccc"
+            border: "1px solid white"
           }}
         />
 
@@ -97,7 +96,7 @@ export default function Login() {
             padding: "12px",
             marginBottom: "18px",
             borderRadius: "5px",
-            border: "1px solid #ccc"
+            border: "1px solid white"
           }}
         />
 

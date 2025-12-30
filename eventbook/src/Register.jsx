@@ -18,7 +18,6 @@ const Register = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: "Segoe UI, sans-serif"
       }}
     >
       <div
@@ -41,14 +40,13 @@ const Register = () => {
           textAlign: "center",
           width: "100%",
           maxWidth: "440px",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
+          boxShadow: "0 10px 30px black"
         }}
       >
         <h1
           style={{
             marginBottom: "12px",
-            fontWeight: "600",
-            letterSpacing: "0.5px"
+            fontWeight: "600"
           }}
         >
           Welcome!🎉🎉
@@ -70,9 +68,9 @@ const Register = () => {
           style={{
             padding: "14px 32px",
             fontSize: "16px",
-            borderRadius: "6px",
+            borderRadius: "5px",
             border: "none",
-            backgroundColor: "#ff4d4f",
+            backgroundColor: "orange",
             color: "white",
             cursor: "pointer",
             fontWeight: "500"
