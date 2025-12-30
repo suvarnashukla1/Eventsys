@@ -5,33 +5,33 @@ It demonstrates user authentication, event management, browsing, and a complete 
 The focus of the project is clarity, usability, and correct architectural decisions within a limited scope.
 
 ## Features
-Authentication
-User signup and login
-JWT-based authentication
-Protected routes for authenticated users
-Event Creation
-View all available events
-Responsive card layout
-Each event opens in a detailed view
-Event Details
-Dedicated page for each event
-Displays full event information
-Booking option available
-Payment Flow
+- Authentication
+- User signup and login
+- JWT-based authentication
+- Protected routes for authenticated users
+- Event Creation
+- View all available events
+- Responsive card layout
+- Each event opens in a detailed view
+- Event Details
+- Dedicated page for each event
+- Displays full event information
+- Booking option available
+- Payment Flow
 
 ## Technology Stack
 ### Frontend
-React (Vite)
-React Router
-PayPal React SDK
-Inline styling
+- React (Vite)
+- React Router
+- PayPal React SDK
+- Inline styling
 
 ### Backend
-Node.js
-Express.js
-MongoDB
-Mongoose
-JWT authentication
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT authentication
 
 ## Environment Variables
 ### Frontend
@@ -60,12 +60,12 @@ npm install
 node server.js
 ```
 ## Future Enhancements
-Improvements
-Backend payment verification
-Seat locking to avoid overbooking
-Payment history storage
-Email notifications
-Admin dashboard
+- Improvements
+- Backend payment verification
+- Seat locking to avoid overbooking
+- Payment history storage
+- Email notifications
+- Admin dashboard
 
 ## Conclusion
 This project presents a complete event booking workflow with authentication, event management, and payment integration.
