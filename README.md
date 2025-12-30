@@ -37,17 +37,18 @@ The focus of the project is clarity, usability, and correct architectural decisi
 ### Frontend
 PayPal Client ID stored in a .env file using Vite environment variables
 
+
+### Backend
+MongoDB connection string,
+JWT secret
+
+Environment files are excluded from version control.
+
 ## Local Setup Instructions
 Prerequisites
 - Node.js v18+
 - npm v9+
 - MongoDB Atlas account
-
-### Backend
-MongoDB connection string
-JWT secret
-
-Environment files are excluded from version control.
 
 ## Running the Project:
 Frontend
