@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Browse() {
   const [events, setEvents] = useState([]);
+  const [month, setMonth] = useState("all");
 
   useEffect(() => {
     async function fetchData() {
@@ -16,6 +17,14 @@ export default function Browse() {
     fetchData();
   }, []);
 
+  const filteredEvents =
+    month === "all"
+      ? events
+      : events.filter(e => {
+          if (!e.date) return false;
+          return new Date(e.date).getMonth().toString() === month;
+        });
+
   return (
     <div
       style={{
@@ -29,38 +38,62 @@ export default function Browse() {
       }}
     >
       <style>{`
-        body {
-          margin: 0;
-        }
-        .event-card {
-          width: 28%;
-        }
+        body { margin: 0; }
+        .event-card { width: 28%; }
 
         @media (max-width: 1024px) {
-          .event-card {
-            width: 45%;
-          }
+          .event-card { width: 45%; }
         }
 
         @media (max-width: 600px) {
-          .event-card {
-            width: 100%;
-          }
+          .event-card { width: 100%; }
         }
       `}</style>
 
+      {/* Heading */}
       <h1
         style={{
           textAlign: "center",
           color: "white",
-          marginBottom: "30px",
+          marginBottom: "20px",
           fontWeight: "700"
         }}
       >
         All Events
       </h1>
 
-      {events.length === 0 ? (
+      {/* Filter BELOW heading, LEFT aligned */}
+      <div style={{ marginBottom: "30px" }}>
+        <select
+          value={month}
+          onChange={e => setMonth(e.target.value)}
+          style={{
+            padding: "10px",
+            fontSize: "14px",
+            backgroundColor: "white",
+            color: "black",
+            border: "none",
+            outline: "none"
+          }}
+        >
+          <option value="all">All Months</option>
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+      </div>
+
+      {/* Events */}
+      {filteredEvents.length === 0 ? (
         <p style={{ color: "white", textAlign: "center" }}>
           No events found
         </p>
@@ -73,7 +106,7 @@ export default function Browse() {
             justifyContent: "center"
           }}
         >
-          {events.map(event => (
+          {filteredEvents.map(event => (
             <a
               key={event._id}
               href={`/event/${event._id}`}
@@ -82,7 +115,6 @@ export default function Browse() {
             >
               <div
                 style={{
-                  minWidth: "240px",
                   backgroundColor: "white",
                   padding: "14px",
                   borderRadius: "6px",
