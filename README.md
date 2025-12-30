@@ -66,8 +66,8 @@ Backend runs at:
 http://localhost:5000
 
 ## Future Enhancements
-- Backend payment verification i.e. complete payment system
+- Backend payment verification i.e. complete payment system(only frontend working back end system left)
 - Seat locking to avoid overbooking
 - Payment history storage
-- Email notifications
+- Email notifications and general noitification
 - Admin dashboard
