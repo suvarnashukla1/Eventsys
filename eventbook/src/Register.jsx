@@ -36,7 +36,7 @@ const Register = () => {
           backgroundColor: "white",
           padding: "48px 40px",
           borderRadius: "10px",
-          border: "1px solid #ccc",
+          border: "1px solid white",
           textAlign: "center",
           width: "100%",
           maxWidth: "440px",
@@ -55,7 +55,7 @@ const Register = () => {
         <p
           style={{
             marginBottom: "28px",
-            color: "#555",
+            color: "black",
             fontSize: "15px",
             lineHeight: "1.5"
           }}

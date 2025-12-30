@@ -49,8 +49,7 @@ export default function Signup() {
         left: 0,
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "Segoe UI, sans-serif"
+        justifyContent: "center"
       }}
     >
       <div
@@ -87,7 +86,7 @@ export default function Signup() {
             padding: "12px",
             marginBottom: "14px",
             borderRadius: "5px",
-            border: "1px solid #ccc"
+            border: "1px solid white"
           }}
         />
 
@@ -101,7 +100,7 @@ export default function Signup() {
             padding: "12px",
             marginBottom: "14px",
             borderRadius: "5px",
-            border: "1px solid #ccc"
+            border: "1px solid white"
           }}
         />
 
@@ -115,7 +114,7 @@ export default function Signup() {
             padding: "12px",
             marginBottom: "18px",
             borderRadius: "5px",
-            border: "1px solid #ccc"
+            border: "1px solid white"
           }}
         />
 
@@ -140,7 +139,7 @@ export default function Signup() {
             marginTop: "16px",
             textAlign: "center",
             fontSize: "14px",
-            color: "#333"
+            color: "black"
           }}
         >
           Already have an account?{" "}

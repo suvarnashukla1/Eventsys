@@ -138,7 +138,7 @@ const Create = () => {
         />
 
         <textarea
-          placeholder="Restriction / Description"
+          placeholder="Description"
           value={restriction}
           onChange={(e) => setRestriction(e.target.value)}
           rows="3"

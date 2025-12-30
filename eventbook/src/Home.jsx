@@ -18,7 +18,6 @@ export default function Home() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: "Segoe UI, sans-serif",
         overflow: "hidden"
       }}
     >
@@ -26,7 +25,7 @@ export default function Home() {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(0,0,0,0.65)"
+          backgroundColor: "black"
         }}
       />
 
@@ -34,7 +33,7 @@ export default function Home() {
         style={{
           position: "relative",
           zIndex: 2,
-          color: "#ffffff",
+          color: "white",
           textAlign: "center",
           padding: "24px",
           maxWidth: "600px"
@@ -77,7 +76,7 @@ export default function Home() {
               border: "none",
               cursor: "pointer",
               backgroundColor: "#ff4d4f",
-              color: "#ffffff"
+              color: "white"
             }}
           >
             Browse Events
@@ -89,10 +88,10 @@ export default function Home() {
               padding: "14px 30px",
               fontSize: "16px",
               borderRadius: "6px",
-              border: "1px solid #ffffff",
+              border: "1px solid white",
               cursor: "pointer",
               backgroundColor: "transparent",
-              color: "#ffffff"
+              color: "white"
             }}
           >
             Admin Login
