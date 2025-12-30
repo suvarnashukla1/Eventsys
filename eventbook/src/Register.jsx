@@ -1,0 +1,88 @@
+import { useNavigate } from "react-router-dom";
+
+const Register = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundImage:
+          "url('https://static.vecteezy.com/system/resources/thumbnails/073/976/799/small/microphone-on-stage-illuminated-by-spotlight-photo.jpeg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: "Segoe UI, sans-serif"
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "black",
+          opacity: 0.5
+        }}
+      ></div>
+
+      <div
+        style={{
+          position: "relative",
+          zIndex: 2,
+          backgroundColor: "white",
+          padding: "48px 40px",
+          borderRadius: "10px",
+          border: "1px solid #ccc",
+          textAlign: "center",
+          width: "100%",
+          maxWidth: "440px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
+        }}
+      >
+        <h1
+          style={{
+            marginBottom: "12px",
+            fontWeight: "600",
+            letterSpacing: "0.5px"
+          }}
+        >
+          Welcome!🎉🎉
+        </h1>
+
+        <p
+          style={{
+            marginBottom: "28px",
+            color: "#555",
+            fontSize: "15px",
+            lineHeight: "1.5"
+          }}
+        >
+          You are now logged in and ready to create your first event.
+        </p>
+
+        <button
+          onClick={() => navigate("/create")}
+          style={{
+            padding: "14px 32px",
+            fontSize: "16px",
+            borderRadius: "6px",
+            border: "none",
+            backgroundColor: "#ff4d4f",
+            color: "white",
+            cursor: "pointer",
+            fontWeight: "500"
+          }}
+        >
+          + Create Event
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Register;
