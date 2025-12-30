@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export default function Browse() {
   const [events, setEvents] = useState([]);
-  const [month, setMonth] = useState("all");
 
   useEffect(() => {
     async function fetchData() {
@@ -16,14 +15,6 @@ export default function Browse() {
     }
     fetchData();
   }, []);
-
-  const filteredEvents =
-    month === "all"
-      ? events
-      : events.filter(e => {
-          if (!e.date) return false;
-          return new Date(e.date).getMonth().toString() === month;
-        });
 
   return (
     <div
@@ -53,42 +44,14 @@ export default function Browse() {
         style={{
           textAlign: "center",
           color: "white",
-          marginBottom: "20px",
+          marginBottom: "30px",
           fontWeight: "700"
         }}
       >
         All Events
       </h1>
 
-      <div style={{ marginBottom: "30px" }}>
-        <select
-          value={month}
-          onChange={e => setMonth(e.target.value)}
-          style={{
-            padding: "10px",
-            fontSize: "14px",
-            backgroundColor: "white",
-            color: "black",
-            border: "none",
-            outline: "none"
-          }}
-        >
-          <option value="all">All Months</option>
-          <option value="0">January</option>
-          <option value="1">February</option>
-          <option value="2">March</option>
-          <option value="3">April</option>
-          <option value="4">May</option>
-          <option value="5">June</option>
-          <option value="6">July</option>
-          <option value="7">August</option>
-          <option value="8">September</option>
-          <option value="9">October</option>
-          <option value="10">November</option>
-          <option value="11">December</option>
-        </select>
-      </div>
-      {filteredEvents.length === 0 ? (
+      {events.length === 0 ? (
         <p style={{ color: "white", textAlign: "center" }}>
           No events found
         </p>
@@ -101,7 +64,7 @@ export default function Browse() {
             justifyContent: "center"
           }}
         >
-          {filteredEvents.map(event => (
+          {events.map(event => (
             <a
               key={event._id}
               href={`/event/${event._id}`}
