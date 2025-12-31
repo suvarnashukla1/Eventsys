@@ -26,17 +26,6 @@ It demonstrates user authentication, event management and browsing.
 - MongoDB
 - JWT authentication
 
-## Environment Variables
-### Frontend
-PayPal Client ID stored in a .env file using Vite environment variables
-
-
-### Backend
-MongoDB connection string,
-JWT secret
-
-Environment files are excluded from version control.
-
 ## Local Setup Instructions
 Prerequisites
 - Node.js v18+
